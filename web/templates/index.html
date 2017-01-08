@@ -1,0 +1,335 @@
+{% load static %}
+{% load template_filters %}
+<!DOCTYPE html>
+<html lang="en" class=" js no-touch csstransitions">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>{{ title }}</title>
+
+
+  <meta name="description" content="endurskodun.com, j og i bókhald">
+  <meta name="author" content="olafurjohannsson.com, Ólafur Aron Jóhannsson">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="images/favicon.ico">
+  
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+  <link href="{% static "css/animations.css" %}" rel="stylesheet">
+  <link href="{% static "css/style.css" %}" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body class="no-trans scroll-spy">
+  
+  <div class="modal fade" id="project-1" tabindex="-1" role="dialog" aria-labelledby="project-1-label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="project-1-label">Choco</h4>
+        </div>
+        <div class="modal-body">
+          <h3>Bird</h3>
+          <div class="row">
+            <div class="col-md-6">
+              <p>That's not chooclate, that's doodoo baby.</p>
+            </div>
+            <div class="col-md-6"> <img src="{% static "img/portfolio-1.jpg" %}" alt=""> </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- scrollToTop -->
+<!-- ================ -->
+<div class="scrollToTop"><i class="icon-up-open-big"></i></div>
+<!-- header start -->
+<!-- ================ -->
+<header class="header fixed clearfix navbar navbar-fixed-top">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <!-- header-left start -->
+        <!-- ================ -->
+        <div class="header-left clearfix">
+          <!-- logo -->
+          <div class="logo smooth-scroll"> <a href="#banner"><!--<img id="logo" src="./static/logo.png" alt="worldwide">--></a> </div>
+        </div>
+        <!-- header-left end -->
+      </div>
+      <div class="col-md-8">
+        <!-- header-right start -->
+        <!-- ================ -->
+        <div class="header-right clearfix">
+          <!-- main-navigation start -->
+          <!-- ================ -->
+          <div class="main-navigation animated">
+            <!-- navbar start -->
+            <!-- ================ -->
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <!-- Toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class="active">
+                      <a href="#{{home.page1_title|remove_html}}">{{home.page1_title|remove_html}}</a></li>
+                    <li class="">
+                      <a href="#{{home.page2_title|remove_html}}">{{home.page2_title|remove_html}}</a>
+                    </li>
+                    <li class="">
+                      <a href="#{{home.page3_title|remove_html}}">{{home.page3_title|remove_html}}</a>
+                    </li>
+                    <li class="">
+                      <a href="#{{home.page4_title|remove_html}}">{{home.page4_title|remove_html}}</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            <!-- navbar end -->
+          </div>
+          <!-- main-navigation end -->
+        </div>
+        <!-- header-right end -->
+      </div>
+    </div>
+  </div>
+</header>
+<!-- header end -->
+<!-- banner start -->
+<!-- ================ -->
+<div id="banner" class="banner">
+  <div class="banner-image" style="position: relative; z-index: 0; background: none;"><div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 581px; width: 1162px; z-index: -999998; position: absolute;">
+    <img src="{% static "img/header_1.jpg" %}" style="position: absolute; margin: 0px; padding: 0px; border: none; width: 1162px; height: 769.825px; max-height: none; max-width: none; z-index: -999999; left: 0px; top: -94.4125px;"></div>
+</div>
+<div class="banner-caption">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 object-non-visible animated object-visible fadeIn" data-animation-effect="fadeIn">
+        <h1 class="text-center">{{home.page1_title | safe}}</h1>
+        <p class="lead text-center">{{home.page1_subtitle | safe}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- banner end -->
+<!-- section start -->
+<!-- ================ -->
+<div class="section clearfix object-non-visible animated object-visible fadeIn" data-animation-effect="fadeIn">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 id="about" class="title text-center">{{home.page2_title|safe}}</h1>
+        <p class="lead text-center">{{home.page2_subtitle|safe}}</p>
+        <div class="space"></div>
+        <div class="row">
+          <div class="col-md-6"> <img src="{% static "img/portfolio-2.jpg" %}" alt="">
+            <div class="space"></div>
+          </div>
+          <div class="col-md-6">
+            <p>{{home.page2_bullet_title}}</p>
+			{% if home.page2_bullet1_title and home.page2_bullet2_title and home.page2_bullet3_title %}
+            <ul class="list-unstyled">
+            	{% if home.page2_bullet1_title %}
+              		<li><i class="fa fa-caret-right pr-10 text-colored"></i> {{home.page2_bullet1_title}}</li>
+              	{% endif %}
+              	{% if home.page2_bullet2_title %}
+              		<li><i class="fa fa-caret-right pr-10 text-colored"></i> {{home.page2_bullet2_title}}</li>
+             	{% endif %}
+             	{% if home.page2_bullet3_title %}
+              		<li><i class="fa fa-caret-right pr-10 text-colored"></i> {{home.page2_bullet3_title}}</li>
+             	{% endif %}
+            </ul>
+            {% endif %}
+          </div>
+        </div>
+        {% if home.page2_sidebullet_title %}
+	        <div class="space"></div>
+	        <h2>{{home.page2_sidebullet_title}}</h2>
+        {% endif %}
+        <div class="row">
+           {% if home.page2_sidebullet_text %}
+	          <div class="col-md-6">
+	            <p>{{home.page2_sidebullet_text}}</p>
+	          </div>
+          {% endif %}
+          <div class="col-md-6">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+              	{% if home.page2_bullet1_title and home.page2_bullet1_text %}
+	                <div class="panel-heading" role="tab" id="headingOne">
+	                  <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+	                      class=""> {{home.page2_bullet1_title}} </a> </h4>
+	                </div>
+	                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
+	                  <div class="panel-body"> {{home.page2_bullet1_text}} </div>
+	                </div>
+                {% endif %}
+              </div>
+              {% if home.page2_bullet2_title and home.page2_bullet2_text %}
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                  <h4 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
+                      aria-controls="collapseTwo"> {{home.page2_bullet2_title}} </a> </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false"
+                  style="height: 0px;">
+			<div class="panel-body"> {{home.page2_bullet2_text}} </div>
+			</div>
+			</div>
+			{% endif %}
+			{% if home.page2_bullet3_title and home.page2_bullet3_text %}
+		<div class="panel panel-default">
+			  <div class="panel-heading" role="tab" id="headingThree">
+			    <h4 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> {{home.page2_bullet3_title}} </a>      </h4>
+			  </div>
+			  <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false"
+			    style="height: 0px;">
+				<div class="panel-body"> {{home.page2_bullet3_text}} </div>
+				</div>
+		</div>
+		{% endif %}
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+{% if home.page3_title %}
+	<div class="section translucent-bg bg-image-1 blue">
+	  <div class="container object-non-visible animated object-visible fadeIn" data-animation-effect="fadeIn">
+	    <h1 id="services" class="text-center title">{{home.page3_title}}</h1>
+	    <div class="space"></div>
+	    <div class="row">
+	      <div class="col-sm-6">
+	        <div class="media">
+	          <div class="media-body text-right">
+	            <h4 class="media-heading">{{home.page3_service1_text}}</h4>
+	            <p>{{home.page3_service1_text}}</p>
+	          </div>
+	          <div class="media-right"> <i class="fa fa-desktop"></i> </div>
+	        </div>
+	        <div class="media">
+	          <div class="media-body text-right">
+	            <h4 class="media-heading">{{home.page3_service2_title}}</h4>
+	            <p>{{home.page3_service2_text}}</p>
+	          </div>
+	          <div class="media-right"> <i class="fa fa-users"></i> </div>
+	        </div>
+	      </div>
+	      {% if home.page3_service4_text and home.page3_service4_title and home.page3_service3_text and home.page3_service3_title %}
+		      <div class="space visible-xs"></div>
+		      <div class="col-sm-6">
+		      {% if home.page3_service3_text and home.page3_service3_title %}
+		        <div class="media">
+		          <div class="media-left"> <i class="fa fa-area-chart"></i> </div>
+		          <div class="media-body">
+		            <h4 class="media-heading">{{home.page3_service3_title}}</h4>
+		            <p>{{home.page3_service3_text}}</p>
+		          </div>
+		        </div>
+		        {% endif %}
+		        {% if home.page3_service4_text and home.page3_service4_title %}
+			        <div class="media">
+			          <div class="media-left"> <i class="fa fa-codepen"></i> </div>
+			          <div class="media-body">
+			            <h4 class="media-heading">{{home.page3_service4_title}}</h4>
+			            <p>{{home.page3_service4_text}}</p>
+			          </div>
+			        </div>
+		        {% endif %}
+		      </div>
+	      	{% endif %}
+	    </div>
+	  </div>
+	</div>
+{% endif %}
+{% if home.page3_subtitle %}
+	<div class="default-bg space blue">
+	  <div class="container">
+	    <div class="row">
+	      <div class="col-md-8 col-md-offset-2">
+	        <h1 class="text-center">{{home.page3_subtitle}}</h1>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+{% endif %}
+
+<footer id="footer">
+  <!-- .footer start -->
+  <!-- ================ -->
+  <div class="footer section">
+    <div class="container">
+      <h1 class="title text-center" id="contact">{{home.page4_title|safe}}</h1>
+      <div class="space"></div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="footer-content">
+            <p class="large">{{home.page4_subtitle|safe}}</p>
+            <ul class="list-icons">
+              <li><i class="fa fa-map-marker pr-10"></i> {{home.page4_address|safe}}</li>
+              <li><i class="fa fa-phone pr-10"></i> {{home.page4_phone|safe}}</li>
+              <li><i class="fa fa-envelope-o pr-10"></i> {{home.page4_email|safe}}</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="footer-content">
+            <form role="form" id="footer-form">
+              <div class="form-group has-feedback">
+                <label class="sr-only" for="name2">Nafn</label>
+                <input type="text" class="form-control" id="name2" placeholder="Nafn" name="name2" required="">
+                <i class="fa fa-user form-control-feedback"></i> </div>
+              <div class="form-group has-feedback">
+                <label class="sr-only" for="email2">Netfang</label>
+                <input type="email" class="form-control" id="email2" placeholder="@" name="email2" required="">
+                <i class="fa fa-envelope form-control-feedback"></i> </div>
+              <div class="form-group has-feedback">
+                <label class="sr-only" for="message2">Skilaboð</label>
+                <textarea class="form-control" rows="8" id="message2" placeholder="Texti" name="message2" required=""></textarea>
+                <i class="fa fa-pencil form-control-feedback"></i> </div>
+              <input type="submit" value="Senda" class="btn btn-default">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="subfooter">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="text-center">Copyright © 2015-2017 <a href="http://olafurjohannsson.com">olafurjohannsson.com</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript" src="{% static "js/jquery.min.js" %}"></script>
+<script type="text/javascript" src="{% static "js/bootstrap.min.js" %}"></script>
+<script type="text/javascript" src="{% static "js/modernizr.js" %}"></script>
+<script type="text/javascript" src="{% static "js/isotope.pkgd.min.js" %}"></script>
+<script type="text/javascript" src="{% static "js/jquery.backstretch.min.js" %}"></script>
+<script type="text/javascript" src="{% static "js/jquery.appear.js" %}"></script>
+<script type="text/javascript" src="{% static "js/template.js" %}"></script>
+
+</body>
+
+</html>
+
